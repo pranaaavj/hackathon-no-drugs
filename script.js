@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Journey Section Animations
+  // Journey Section Animations - FIXED VERSION
   const journeyAnimations = () => {
     // Pin the journey section for the duration of the animation
     ScrollTrigger.create({
@@ -50,15 +50,20 @@ document.addEventListener('DOMContentLoaded', function () {
     // Animate scene content appearing
     const scenes = document.querySelectorAll('.scene-content');
     scenes.forEach((scene, index) => {
+      // First, make sure all scenes start invisible
+      gsap.set(scene, { opacity: 0, y: 50 });
+
+      // Then animate them based on scroll position
       gsap.to(scene, {
         opacity: 1,
         y: 0,
-        duration: 1,
+        duration: 0.5,
         scrollTrigger: {
           trigger: '#journey',
-          start: `top+=${index * 25}% top`,
-          end: `top+=${(index + 1) * 25}% top`,
-          scrub: 1,
+          start: `top+=${index * 50}% top`,
+          end: `top+=${(index + 1) * 50}% top`,
+          scrub: true,
+          toggleActions: 'play none none reverse',
         },
       });
     });

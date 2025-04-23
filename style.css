@@ -241,6 +241,7 @@ p {
   height: 200vh;
   background: var(--light);
   position: relative;
+  overflow: hidden; /* Ensure content doesn't overflow */
 }
 
 .journey-container {
@@ -249,6 +250,7 @@ p {
   height: 100vh;
   top: 0;
   left: 0;
+  overflow: visible; /* Allow content to be visible */
 }
 
 .character-wrapper {
@@ -283,6 +285,7 @@ p {
   width: 400%;
   height: 100%;
   display: flex;
+  z-index: 1; /* Ensure it's above other elements */
 }
 
 .journey-scene {
@@ -292,6 +295,8 @@ p {
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  position: relative; /* Ensure proper positioning */
+  z-index: 2; /* Higher than journey-path */
 }
 
 #school {
@@ -316,8 +321,9 @@ p {
   background: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  opacity: 0;
-  transform: translateY(50px);
+  /* Remove the initial opacity and transform that were hiding content */
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .scene-content h3 {
