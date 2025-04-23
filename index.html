@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Say No to Drugs - An interactive journey about making positive life choices">
+  <title>One Life. One Choice. | Say No to Drugs</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600&family=Lora:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Hero Section -->
+  <section id="hero" class="section">
+    <div class="bg-animation">
+      <div class="cloud cloud1"></div>
+      <div class="cloud cloud2"></div>
+      <div class="cloud cloud3"></div>
+      <div class="bird bird1"></div>
+      <div class="bird bird2"></div>
+      <div class="bird bird3"></div>
+    </div>
+    <div class="container">
+      <h1 class="main-title">One Life. One Choice.</h1>
+      <h2 class="subtitle">Say No to Drugs</h2>
+      <p class="tagline">Your future is brighter than you think.</p>
+      <button id="begin-journey" class="cta-button">Begin the Journey</button>
+    </div>
+  </section>
+
+  <!-- Animated Scroll Journey -->
+  <section id="journey" class="section">
+    <div class="journey-container">
+      <div class="character-wrapper">
+        <div class="character"></div>
+      </div>
+      <div class="journey-path">
+        <div class="journey-scene" id="school">
+          <div class="scene-content">
+            <h3>Temptation</h3>
+            <p>Every journey begins with choices that shape our future. Stay true to yourself.</p>
+          </div>
+        </div>
+        <div class="journey-scene" id="alley">
+          <div class="scene-content">
+            <h3>Fall</h3>
+            <p>One wrong turn can lead to a detour that's difficult to escape.</p>
+          </div>
+        </div>
+        <div class="journey-scene" id="rehab">
+          <div class="scene-content">
+            <h3>Help</h3>
+            <p>It's never too late to reach out. Support is always available.</p>
+          </div>
+        </div>
+        <div class="journey-scene" id="recovery">
+          <div class="scene-content">
+            <h3>Hope</h3>
+            <p>Every new dawn brings a chance to rebuild and thrive.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Education Section -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2 class="section-title">What You Should Know</h2>
+      <div class="cards-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <i class="fas fa-brain"></i>
+              <h3>What is Addiction?</h3>
+            </div>
+            <div class="flip-card-back">
+              <p>Addiction is a chronic brain disorder that affects behavior and brain function, not a moral failing or
+                choice.</p>
+              <p class="stat">"Over 21 million Americans struggle with substance addiction."</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <i class="fas fa-heartbeat"></i>
+              <h3>Health Effects</h3>
+            </div>
+            <div class="flip-card-back">
+              <p>Drugs can cause permanent damage to vital organs, including your heart, brain, liver, and lungs.</p>
+              <p class="stat">"Even short-term use can have devastating consequences."</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <i class="fas fa-hands-helping"></i>
+              <h3>Finding Support</h3>
+            </div>
+            <div class="flip-card-back">
+              <p>Recovery is a journey best taken with support from professionals, family, and friends.</p>
+              <p class="stat">"Recovery rates increase by 40% with proper support systems."</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <i class="fas fa-seedling"></i>
+              <h3>Life After Recovery</h3>
+            </div>
+            <div class="flip-card-back">
+              <p>Recovery opens doors to healthier relationships, goals, and passions that drugs had overshadowed.</p>
+              <p class="stat">"Recovery isn't just about quitting drugs – it's about discovering a meaningful life."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote Carousel -->
+  <section id="voices" class="section">
+    <div class="container">
+      <h2 class="section-title">Real Voices</h2>
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <div class="carousel-slide">
+            <div class="avatar" aria-hidden="true">
+              <div class="avatar-img avatar1"></div>
+            </div>
+            <blockquote>
+              "I almost lost everything. My family, my career, my health. Saying no would have saved me years of
+              struggle. Now I help others make better choices."
+              <cite>— Jamie, 5 years clean</cite>
+            </blockquote>
+          </div>
+          <div class="carousel-slide">
+            <div class="avatar" aria-hidden="true">
+              <div class="avatar-img avatar2"></div>
+            </div>
+            <blockquote>
+              "Peer pressure made me feel like I needed drugs to fit in. The strongest thing I ever did was walk away.
+              Real friends support healthy choices."
+              <cite>— Taylor, Peer Counselor</cite>
+            </blockquote>
+          </div>
+          <div class="carousel-slide">
+            <div class="avatar" aria-hidden="true">
+              <div class="avatar-img avatar3"></div>
+            </div>
+            <blockquote>
+              "As a parent, I wish I'd talked to my child sooner. Having open conversations about drugs before they face
+              temptation makes all the difference."
+              <cite>— Morgan, Parent Advocate</cite>
+            </blockquote>
+          </div>
+          <div class="carousel-slide">
+            <div class="avatar" aria-hidden="true">
+              <div class="avatar-img avatar4"></div>
+            </div>
+            <blockquote>
+              "Recovery taught me I'm much stronger than I ever knew. Every day clean is a victory worth celebrating."
+              <cite>— Alex, Recovery Coach</cite>
+            </blockquote>
+          </div>
+        </div>
+        <div class="carousel-nav">
+          <button class="carousel-dot active" data-slide="0" aria-label="View testimonial 1"></button>
+          <button class="carousel-dot" data-slide="1" aria-label="View testimonial 2"></button>
+          <button class="carousel-dot" data-slide="2" aria-label="View testimonial 3"></button>
+          <button class="carousel-dot" data-slide="3" aria-label="View testimonial 4"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mini Game Section -->
+  <section id="game" class="section">
+    <div class="container">
+      <h2 class="section-title">Choose Your Path</h2>
+      <p class="game-intro">Life presents many crossroads. Make your choice and see where it leads.</p>
+      <div class="game-scenario">
+        <p>You're at a party with your friends. Someone offers you drugs.</p>
+        <div class="choice-buttons">
+          <button id="say-no" class="choice-button choice-positive">Say No</button>
+          <button id="accept" class="choice-button choice-negative">Accept</button>
+        </div>
+      </div>
+      <div id="game-outcome" class="game-outcome hidden">
+        <div id="positive-outcome" class="outcome-content hidden">
+          <div class="outcome-animation">
+            <div class="tree tree1"></div>
+            <div class="tree tree2"></div>
+            <div class="star star1"></div>
+            <div class="star star2"></div>
+            <div class="star star3"></div>
+          </div>
+          <h3>Strong Choice!</h3>
+          <p id="positive-message">You chose your health and future over temporary escape. This strength will serve you
+            well in life.</p>
+        </div>
+        <div id="negative-outcome" class="outcome-content hidden">
+          <div class="outcome-animation negative">
+            <div class="spiral"></div>
+          </div>
+          <h3>A Different Path</h3>
+          <p id="negative-message">What seems like a moment of fun can lead to years of struggle. It's never too late to
+            make a different choice.</p>
+        </div>
+        <button id="try-again" class="cta-button">Try Again</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section id="cta" class="section">
+    <div class="sunrise-bg"></div>
+    <div class="container">
+      <h2 class="section-title">You Can Be the Difference</h2>
+      <p class="cta-text">You are stronger than any substance. Let's fight together.</p>
+      <div class="cta-buttons">
+        <a href="#resources" class="cta-button">Get Help</a>
+        <button id="join-cause" class="cta-button cta-secondary">Join the Cause</button>
+      </div>
+      <div id="join-form" class="join-form hidden">
+        <h3>Stay Connected</h3>
+        <form id="email-form">
+          <input type="email" placeholder="Your email" required aria-label="Your email">
+          <button type="submit" class="cta-button">Subscribe</button>
+        </form>
+        <p class="form-message"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resources Section (hidden until CTA clicked) -->
+  <section id="resources" class="section hidden">
+    <div class="container">
+      <h2 class="section-title">Resources & Support</h2>
+      <div class="resources-grid">
+        <div class="resource-card">
+          <i class="fas fa-phone"></i>
+          <h3>Helplines</h3>
+          <p>SAMHSA's National Helpline: 1-800-662-HELP (4357)</p>
+          <p>Available 24/7, 365 days a year</p>
+        </div>
+        <div class="resource-card">
+          <i class="fas fa-users"></i>
+          <h3>Support Groups</h3>
+          <p>Narcotics Anonymous</p>
+          <p>SMART Recovery</p>
+        </div>
+        <div class="resource-card">
+          <i class="fas fa-book-medical"></i>
+          <h3>Treatment Options</h3>
+          <p>Detoxification</p>
+          <p>Rehabilitation</p>
+          <p>Therapy & Counseling</p>
+        </div>
+        <div class="resource-card">
+          <i class="fas fa-hands-helping"></i>
+          <h3>For Family & Friends</h3>
+          <p>Al-Anon/Nar-Anon</p>
+          <p>Family Therapy Resources</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>This website is created for educational purposes. If you or someone you know is struggling with substance
+        abuse, please reach out for professional help.</p>
+      <p>&copy; <span id="current-year"></span> Say No to Drugs Campaign</p>
+    </div>
+  </footer>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+
+</html>
